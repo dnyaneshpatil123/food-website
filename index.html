@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Heaven's Restaurant</title>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+   <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+   <!-- header section starts     -->
+
+   <section class="header">
+
+      <a href="#" class="logo"> <i class="fas fa-utensils"></i>Heaven's Restaurant</a>
+
+      <div class="group">
+         <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#food">food</a>
+            <a href="#gallery">gallery</a>
+            <a href="#menu">menu</a>
+            <a href="#order">order</a>
+            <a href="#blogs">blogs</a>
+         </nav>
+
+         <div id="menu-btn" class="fas fa-bars"></div>
+
+         <div class="search">
+            <span class="icon">
+               <ion-icon name="search-outline" class="searchbtn"></ion-icon>
+               <ion-icon name="close-outline" class="closebtn"></ion-icon>
+            </span>
+         </div>
+      </div>
+
+      <div class="searchbox">
+         <input type="text" id="search-items" placeholder="Search here..." class="inputBox" onkeyup="search()">
+      </div>
+   </section>
+
+   <!-- header section ends    -->
+
+   <!-- home section starts  -->
+
+   <section class="home" id="home">
+
+      <div class="swiper home-slider">
+
+         <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide" style="background: url(images/home-slide-1.jpg) no-repeat;">
+               <div class="content">
+                  <span>outstanding food</span>
+                  <h3>just munchin' and lunchin'</h3>
+                  <a href="#about" class="btn">get started</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide" style="background: url(images/home-slide-2.jpg) no-repeat;">
+               <div class="content">
+                  <span>astounding ambience</span>
+                  <h3>good food, good life!</h3>
+                  <a href="#about" class="btn">get started</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide" style="background: url(images/home-slide-3.jpg) no-repeat;">
+               <div class="content">
+                  <span>master chef's</span>
+                  <h3>authentic kitchen</h3>
+                  <a href="#about" class="btn">get started</a>
+               </div>
+            </div>
+
+         </div>
+
+         <div class="swiper-button-next"></div>
+         <div class="swiper-button-prev"></div>
+      </div>
+   </section>
+
+   <!-- home section ends -->
+
+   <!-- about section starts  -->
+
+   <section class="about" id="about">
+
+      <div class="image">
+         <img src="images/about-img.png" alt="">
+      </div>
+
+      <div class="content">
+         <h3 class="title">welcome to our restaurant</h3>
+         <p>heaven's restaurant has always been known throughout Navi Mumbai for years as one of the most successful and
+            popular restaurant. it's lavish and diverse cuisines range from mexican, european, indian to thai,
+            korean,
+            chinese, japanese and many more! Our chefs are the finest in the country who have graduated from the
+            prestigious sanjeev kapoor academy.</p>
+         <a href="https://sanjeevkapooracademy.com/" target="_blank" class="btn">read more</a>
+
+         <div class="icons-container">
+            <div class="icons">
+               <img src="images/about-icon-1.png" alt="">
+               <h3>quality food</h3>
+            </div>
+
+            <div class="icons">
+               <img src="images/about-icon-2.png" alt="">
+               <h3>food & drinks</h3>
+            </div>
+
+            <div class="icons">
+               <img src="images/about-icon-3.png" alt="">
+               <h3>expert chefs</h3>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- about section ends -->
+
+   <!-- food section starts  -->
+
+   <section class="food" id="food">
+
+      <div class="heading">
+         <span>popular dishes</span>
+         <h3>our delicious food</h3>
+      </div>
+
+      <div class="swiper food-slider">
+
+         <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide" data-name="food-1">
+               <img src="images/food-img-1.png" alt="">
+               <h3>Ceaser Salad</h3>
+               <div class="price">₹1399</div>
+            </div>
+
+            <div class="swiper-slide slide" data-name="food-2">
+               <img src="images/food-img-2.png" alt="">
+               <h3>Poulet de Provencal</h3>
+               <div class="price">₹1599</div>
+            </div>
+
+            <div class="swiper-slide slide" data-name="food-3">
+               <img src="images/food-img-3.png" alt="">
+               <h3>Chicken Tandoori</h3>
+               <div class="price">₹1299</div>
+            </div>
+
+            <div class="swiper-slide slide" data-name="food-4">
+               <img src="images/food-img-4.png" alt="">
+               <h3>Sashimi and Nigiri</h3>
+               <div class="price">₹1699</div>
+            </div>
+
+            <div class="swiper-slide slide" data-name="food-5">
+               <img src="images/food-img-5.png" alt="">
+               <h3>schnitzel</h3>
+               <div class="price">₹1199</div>
+            </div>
+         </div>
+
+         <div class="swiper-pagination"></div>
+      </div>
+   </section>
+
+   <!-- food section ends -->
+
+   <!-- food preview section starts  -->
+
+   <section class="food-preview-container">
+
+      <div id="close-preview" class="fas fa-times"></div>
+
+      <div class="food-preview" data-target="food-1">
+         <img src="images/food-img-1.png" alt="">
+         <h3>Ceaser Salad</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+         </div>
+         <p>a green salad of romaine with a highly seasoned dressing of pounded anchovies, olive oil, lemon juice,
+            egg,
+            and Parmesan cheese, garnished with croutons.</p>
+         <div class="price">₹1399</div>
+         <a href="#order" class="btn">order now</a>
+      </div>
+
+      <div class="food-preview" data-target="food-2">
+         <img src="images/food-img-2.png" alt="">
+         <h3>Poulet de Provencal</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+         </div>
+         <p>chicken cooked in a sauce made with tomatoes, garlic, and olive oil.</p>
+         <div class="price">₹1599</div>
+         <a href="#order" class="btn">order now</a>
+      </div>
+
+      <div class="food-preview" data-target="food-3">
+         <img src="images/food-img-3.png" alt="">
+         <h3>Chicken Tandoori</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+         </div>
+         <p>a dish of roasted chicken marinated in yogurt and generously spiced, giving the meat its trademark red
+            colour.</p>
+         <div class="price">₹1299</div>
+         <a href="#order" class="btn">order now</a>
+      </div>
+
+      <div class="food-preview" data-target="food-4">
+         <img src="images/food-img-4.png" alt="">
+         <h3>Sashimi and Nigiri</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+         </div>
+         <p>a staple rice dish of Japanese cuisine, consisting of cooked rice flavoured with vinegar and a variety of
+            vegetable, egg, or raw seafood garnishes and served cold.</p>
+         <div class="price">₹1699</div>
+         <a href="#order" class="btn">order now</a>
+      </div>
+
+      <div class="food-preview" data-target="food-5">
+         <img src="images/food-img-5.png" alt="">
+         <h3>schnitzel</h3>
+         <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+         </div>
+         <p>a cutlet of chicken pounded thin by a meat tenderizer, then dipped in flour, egg and breadcrumbs (in that
+            order), and fried until golden.</p>
+         <div class="price">₹1199</div>
+         <a href="#order" class="btn">order now</a>
+      </div>
+   </section>
+
+   <!-- food preview section ends -->
+
+   <!-- gallery section starts  -->
+
+   <section class="gallery" id="gallery">
+
+      <div class="heading">
+         <span>our gallery</span>
+         <h3>our untold stories</h3>
+      </div>
+
+      <div class="gallery-container">
+
+         <a href="images/food-galler-img-1.jpg" class="box">
+            <img src="images/food-galler-img-1.jpg" alt="">
+            <div class="icon"> <i class="fas fa-plus"></i> </div>
+         </a>
+
+         <a href="images/food-galler-img-2.jpg" class="box">
+            <img src="images/food-galler-img-2.jpg" alt="">
+            <div class="icon"> <i class="fas fa-plus"></i> </div>
+         </a>
+
+         <a href="images/food-galler-img-3.jpg" class="box">
+            <img src="images/food-galler-img-3.jpg" alt="">
+            <div class="icon"> <i class="fas fa-plus"></i> </div>
+         </a>
+
+         <a href="images/food-galler-img-4.jpg" class="box">
+            <img src="images/food-galler-img-4.jpg" alt="">
+            <div class="icon"> <i class="fas fa-plus"></i> </div>
+         </a>
+
+         <a href="images/food-galler-img-5.jpg" class="box">
+            <img src="images/food-galler-img-5.jpg" alt="">
+            <div class="icon"> <i class="fas fa-plus"></i> </div>
+         </a>
+
+         <a href="images/food-galler-img-6.jpg" class="box">
+            <img src="images/food-galler-img-6.jpg" alt="">
+            <div class="icon"> <i class="fas fa-plus"></i> </div>
+         </a>
+
+      </div>
+   </section>
+
+   <!-- gallery section ends -->
+
+   <!-- menu section starts  -->
+
+   <section class="menu" id="menu">
+
+      <div class="heading">
+         <span>our menu</span>
+         <h3>our popular dishes</h3>
+      </div>
+
+      <div class="swiper menu-slider">
+
+         <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+               <h3 class="title">breakfast</h3>
+               <div class="box-container">
+                  <div class="box">
+                     <div class="info">
+                        <h3>Morning Glory Baked Oatmeal</h3>
+                        <p>This warm and cozy baked oatmeal studded with carrots, apples, and raisins is the
+                           make-ahead
+                           breakfast situation your busy mornings need.</p>
+                     </div>
+                     <div class="price">₹299</div>
+                  </div>
+
+                  <div class="box">
+                     <div class="info">
+                        <h3>Pumpkin Pancakes</h3>
+                        <p>These pumpkin pancakes are tall and light, highly spiced, and the perfect way to relish a
+                           crisp fall morning.</p>
+                     </div>
+                     <div class="price">₹599</div>
+                  </div>
+
+                  <div class="box">
+                     <div class="info">
+                        <h3>Molletes</h3>
+                        <p>Fried eggs, pico de gallo, melty cheese, and refried beans, all piled atop crusty bread.
+                        </p>
+                     </div>
+                     <div class="price">₹799</div>
+                  </div>
+
+                  <div class="box">
+                     <div class="info">
+                        <h3>Granola Scones</h3>
+                        <p>Scones full of the textures and flavors of a granola bar—a hint of sweetness comes from
+                           copious dried fruit and a sprinkle of raw sugar.</p>
+                     </div>
+                     <div class="price">₹399</div>
+                  </div>
+
+                  <div class="box">
+                     <div class="info">
+                        <h3>New Mexican–Style Breakfast Burritos</h3>
+                        <p>This breakfast burrito recipe from Eric See requires shredded hash browns and New Mexico
+                           chiles. And that’s perfectly fine by us.</p>
+                     </div>
+                     <div class="price">₹699</div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <h3 class="title">lunch</h3>
+               <div class="box-container">
+                  <div class="box">
+                     <div class="info">
+                        <h3>Tamago sando</h3>
+                        <p>Japanese egg salad sandwiches, tamago sandos are cut into perfect rectangles. These
+                           sandwiches use Japanese milk bread and Japanese mayonnaise.</p>
+                     </div>
+                     <div class="price">₹1199</div>
+                  </div>
+
+                  <div class="box">
+                     <div class="info">
+                        <h3>Garlic noodles</h3>
+                        <p>Requiring little prep time and easy to reheat, noodles make a great comfort food lunch
+                           option. Cook them with tons of garlic and a savory, flavor-packed sauce, then serve them
+                           with
+                           anything from fish to a quick veggie stir-fry.</p>
+                     </div>
+                     <div class="price">₹999</div>
+                  </div>
+
+                  <div class="box">
+                     <div class="info">
+                        <h3>Chicken taco</h3>
+                        <p>There’s no one way to make chicken tacos—you can start by shredding rotisserie chicken,
+                           grilled chicken, or even crispy chicken. Add it to a tortilla with a few toppings and
+                           you’re
+                           set.</p>
+                     </div>
+                     <div class="price">₹1299</div>
+                  </div>
+
+                  <div class="box">
+                     <div class="info">
+                        <h3>Cemita</h3>
+                        <p>Mexican sandwiches from the state of Puebla, cemita’s name derives from the signature
+                           sesame
+                           seed bread, called cemita rolls. Fill with meat, cheese, avocado, and fresh herbs for a
+                           classic version.
+                     </div>
+                     <div class="price">₹1199</div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <h3 class="title">dinner</h3>
+               <div class="box-container">
+                  <div class="box">
+                     <div class="info">
+                        <h3>Chicken Potpie</h3>
+                        <p>Chock-full of chicken, potatoes, peas and corn, this recipe makes two golden pies, so you
+                           can
+                           serve one at supper and save the other for a busy night.</p>
+                     </div>
+                     <div class="price">₹1499</div>
+                  </div>
+
+                  <div class="box">
+                     <div class="info">
+                        <h3>White Chicken Chili</h3>
+                        <p>Folks will enjoy a change from traditional chili when they dip their spoons into this
+                           flavorful blend of tender chicken, white beans and just enough zip.</p>
+                     </div>
+                     <div class="price">₹1099</div>
+                  </div>
+
+                  <div class="box">
+                     <div class="info">
+                        <h3>Chicken Piccata</h3>
+                        <p>Seasoned with parmesan and parsley, the chicken cooks up golden brown, then is drizzled
+                           with
+                           a light lemon sauce.</p>
+                     </div>
+                     <div class="price">₹1799</div>
+                  </div>
+
+                  <div class="box">
+                     <div class="info">
+                        <h3>Salmon with Creamy Dill Sauce</h3>
+                        <p>The sour cream dill sauce is subtly seasoned with horseradish so that it doesn’t overpower
+                           the delicate salmon flavor.</p>
+                     </div>
+                     <div class="price">₹2099</div>
+                  </div>
+
+                  <div class="box">
+                     <div class="info">
+                        <h3>Chicken Quesadillas</h3>
+                        <p>This chicken quesadilla recipe has an impressive look and taste with little preparation.
+                           The
+                           leftover chicken gets Mexican flair from cumin in this fun main dish.</p>
+                     </div>
+                     <div class="price">₹1899</div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <h3 class="title">drinks</h3>
+               <div class="box-container">
+                  <div class="box">
+                     <div class="info">
+                        <h3>Moscow Mule</h3>
+                        <p>Pour vodka and lime juice into a mug. Add ice cubes. Pour ginger beer. Stir ingredients.
+                        </p>
+                     </div>
+                     <div class="price">₹1099</div>
+                  </div>
+
+                  <div class="box">
+                     <div class="info">
+                        <h3>Whiskey Sour</h3>
+                        <p>Pour ice and all of the ingredients into a shaker. Shake for about 20 seconds to chill the
+                           ingredients. Strain the mix into a glass filled with ice.
+                        </p>
+                     </div>
+                     <div class="price">₹999</div>
+                  </div>
+
+                  <div class="box">
+                     <div class="info">
+                        <h3>Margarita</h3>
+                        <p>Rub the rim of the glass with a lime slice. Add salt to the rim. Pour the rest of the
+                           ingredients into a shaker. Shake well. Strain ingredients into the prepared glass over
+                           fresh
+                           ice.
+                        </p>
+                     </div>
+                     <div class="price">₹899</div>
+                  </div>
+
+                  <div class="box">
+                     <div class="info">
+                        <h3>Bloody Mary</h3>
+                        <p>Put some salt on a plate. Rub a lime wedge along the lip of the highball glass. Roll the
+                           outer edge of the glass into the salt until it’s fully coated. Fill the glass with ice and
+                           set it aside. Add your ingredients into the shaker. Shake well. Strain into your prepared
+                           glass.</p>
+                     </div>
+                     <div class="price">₹799</div>
+                  </div>
+
+                  <div class="box">
+                     <div class="info">
+                        <h3>Mojito</h3>
+                        <p>Muddle lime juice, simple syrup, and sugar in a Collins glass. Add mint leaves and mush
+                           them
+                           to the side of the glass. Fill glass with cracked ice. Pour rum and club soda or seltzer.
+                           Stir ingredients and serve.
+                        </p>
+                     </div>
+                     <div class="price">₹599</div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <h3 class="title">dessert</h3>
+               <div class="box-container">
+                  <div class="box">
+                     <div class="info">
+                        <h3>Biscoff Banana Pudding</h3>
+                        <p>The subtle spice of Biscoff cookies helps to balance the sweetness of each decadent layer
+                           of
+                           creamy custard and fresh bananas in this tall and impressive banana pudding.</p>
+                     </div>
+                     <div class="price">₹699</div>
+                  </div>
+
+                  <div class="box">
+                     <div class="info">
+                        <h3>Strawberry Shortcake</h3>
+                        <p>This giant biscuit-cake is split and stuffed with a pile of fresh strawberries and fluffy
+                           whipped cream for a tender, delightfully messy dessert. Cut it into wedges and serve up a
+                           strawberry shortcake</p>
+                     </div>
+                     <div class="price">₹999</div>
+                  </div>
+
+                  <div class="box">
+                     <div class="info">
+                        <h3>Brown-Butter Chocolate Chip Cookies</h3>
+                        <p>Here, the butter is first melted in a skillet until golden brown and nutty. This simple
+                           step
+                           does require a bit of extra time (mainly for chilling the butter), but the result is an
+                           intensely toasty butterscotch note that makes these thin, chewy cookies irresistible.</p>
+                     </div>
+                     <div class="price">₹799</div>
+                  </div>
+
+                  <div class="box">
+                     <div class="info">
+                        <h3>Nutella-Swirl Pound Cake</h3>
+                        <p>This pound cake is made especially rich by swirling in the chocolate-hazelnut spread
+                           Nutella.
+                           Serve it with coffee ice cream for an extra-special treat.</p>
+                     </div>
+                     <div class="price">₹599</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="swiper-pagination"></div>
+      </div>
+   </section>
+
+   <!-- menu section ends -->
+
+   <!-- order section starts  -->
+
+   <section class="order" id="order">
+
+      <div class="heading">
+         <span>order now</span>
+         <h3>fast home delivery</h3>
+      </div>
+
+      <form action="">
+         <div class="box-container">
+            <div class="box">
+               <div class="inputBox">
+                  <span>full name</span>
+                  <input type="text" placeholder="enter your name">
+               </div>
+
+               <div class="inputBox">
+                  <span>food name</span>
+                  <input type="text" placeholder="food you want">
+               </div>
+
+               <div class="inputBox">
+                  <span>order details</span>
+                  <input type="text" placeholder="specifics with food">
+               </div>
+
+               <div class="inputBox">
+                  <span>your address</span>
+                  <textarea name="" placeholder="enter your address" id="" cols="30" rows="10"></textarea>
+               </div>
+            </div>
+
+            <div class="box">
+               <div class="inputBox">
+                  <span>number</span>
+                  <input type="number" placeholder="enter your number">
+               </div>
+
+               <div class="inputBox">
+                  <span>quantity</span>
+                  <input type="number" placeholder="how much you want">
+               </div>
+
+               <div class="inputBox">
+                  <span>when you want</span>
+                  <input type="datetime-local">
+               </div>
+
+               <div class="inputBox">
+                  <span>our address</span>
+                  <iframe class="map"
+                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3771.964659136654!2d73.0157556!3d19.0212789!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c20c57446235%3A0xf2065ffad82ad892!2sNexus%20Seawoods!5e0!3m2!1sen!2sin!4v1679510674652!5m2!1sen!2sin"
+                     allowfullscreen="" loading="lazy"></iframe>
+               </div>
+            </div>
+         </div>
+
+         <a href="#order" class="btn">order now</a>
+      </form>
+   </section>
+
+   <!-- order section ends -->
+
+   <!-- blogs section starts  -->
+
+   <section class="blogs" id="blogs">
+
+      <div class="heading">
+         <span>our blogs</span>
+         <h3>our latest posts</h3>
+      </div>
+
+      <div class="swiper blogs-slider">
+
+         <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <img src="images/blog-img-1.jpg" alt="">
+               </div>
+               <div class="content">
+                  <div class="icon">
+                     <a> <i class="fas fa-calendar"></i> 5th may, 2023 </a>
+                     <a> <i class="fas fa-user"></i> by tushar chandra </a>
+                  </div>
+                  <a class="title">A Burger Journey</a>
+                  <p>Click below to discover more!</p>
+                  <a href="https://theburgerblog.com/" target="_blank" class="btn">read more</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <img src="images/blog-img-2.jpg" alt="">
+               </div>
+               <div class="content">
+                  <div class="icon">
+                     <a> <i class="fas fa-calendar"></i> 21st june, 2023 </a>
+                     <a> <i class="fas fa-user"></i> by vidya sagar </a>
+                  </div>
+                  <a class="title">sandwich central</a>
+                  <p>Click below to discover more!</p>
+                  <a href="https://somethingaboutsandwiches.com/" target="_blank" class="btn">read more</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <img src="images/blog-img-3.jpg" alt="">
+               </div>
+               <div class="content">
+                  <div class="icon">
+                     <a> <i class="fas fa-calendar"></i> 31st august, 2023 </a>
+                     <a> <i class="fas fa-user"></i> by Adnan Prasad </a>
+                  </div>
+                  <a class="title">Tender Chicken</a>
+                  <p>Click below to discover more!</p>
+                  <a href="https://www.licious.in/blog/recipe/chicken-dishes-will-always-be-an-international-favourite"
+                     target="_blank" class="btn">read more</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <img src="images/blog-img-4.jpg" alt="">
+               </div>
+               <div class="content">
+                  <div class="icon">
+                     <a> <i class="fas fa-calendar"></i> 15th november, 2023 </a>
+                     <a> <i class="fas fa-user"></i> by Simone Patil</a>
+                  </div>
+                  <a class="title">I love ice cream!</a>
+                  <p>Click below to discover more!</p>
+                  <a href="https://www.mymochi.com/blog/9-reasons-why-everyone-loves-ice-cream/" target="_blank"
+                     class="btn">read more</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <img src="images/blog-img-5.jpg" alt="">
+               </div>
+               <div class="content">
+                  <div class="icon">
+                     <a> <i class="fas fa-calendar"></i> 9th december, 2023 </a>
+                     <a> <i class="fas fa-user"></i> by Lila Jha </a>
+                  </div>
+                  <a class="title">Best Pizza Chain in india</a>
+                  <p>Click below to discover more!</p>
+                  <a href="https://www.chicagopizza.in/blog/" target="_blank" class="btn">read more</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <img src="images/blog-img-6.jpg" alt="">
+               </div>
+               <div class="content">
+                  <div class="icon">
+                     <a> <i class="fas fa-calendar"></i> 18th march, 2023 </a>
+                     <a> <i class="fas fa-user"></i> by Aisha Prasad </a>
+                  </div>
+                  <a class="title">top 19 coffee blogs!</a>
+                  <p>Click below to discover more!</p>
+                  <a href="https://coffeeaffection.com/best-coffee-blogs/" target="_blank" class="btn">read more</a>
+               </div>
+            </div>
+
+         </div>
+
+         <div class="swiper-pagination"></div>
+      </div>
+   </section>
+
+   <!-- blogs section ends -->
+
+   <!-- footer section starts  -->
+
+   <section class="footer">
+
+      <div class="icons-container">
+
+         <div class="icons">
+            <i class="fas fa-clock"></i>
+            <h3>opening hours</h3>
+            <p>8:00am to 11:00pm</p>
+         </div>
+
+         <div class="icons">
+            <i class="fas fa-phone"></i>
+            <h3>phone</h3>
+            <p>+91 2086213307</p>
+         </div>
+
+         <div class="icons">
+            <i class="fas fa-envelope"></i>
+            <h3>email</h3>
+            <p>hvnkitchenofficial@gmail.com</p>
+         </div>
+
+         <div class="icons">
+            <i class="fas fa-map"></i>
+            <h3>address</h3>
+            <p>Nexus Seawoods, Sector 40, Nerul, Navi Mumbai, Maharashtra 400706</p>
+         </div>
+
+      </div>
+
+      <div class="share">
+         <a href="https://www.facebook.com/ChefSanjeevKapoor/" target="_blank" class="fab fa-facebook-f"></a>
+         <a href="https://twitter.com/SanjeevKapoor" target="_blank" class="fab fa-twitter"></a>
+         <a href="https://www.instagram.com/sanjeevkapoor/?hl=en" target="_blank" class="fab fa-instagram"></a>
+         <a href="https://www.youtube.com/channel/UCmoX4QULJ9MB00xW4coMiOw" target="_blank" class="fab fa-youtube"></a>
+      </div>
+
+      <div class="credit">copyright &copy; 2023. <span>all rights reserved.</span></div>
+   </section>
+
+   <!-- footer section ends  -->
+
+   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+   <script src="script.js"></script>
+
+</body>
+
+</html>
